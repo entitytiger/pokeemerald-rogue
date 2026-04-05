@@ -74,7 +74,7 @@ jobs:
           make -j${nproc} -O emerogue-test.elf
           make -j${nproc} check
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         if: ${{ inputs.upload_artifacts }}
         with:
             name: emerogue
